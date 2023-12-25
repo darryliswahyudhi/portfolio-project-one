@@ -87,7 +87,20 @@ function HomePage() {
                       </div>
             </div>
             <div className="contact-content">
-                <p>this is for contact</p>
+                      <div className="contact-form">
+                          <h2>Contact</h2>
+                          <form>
+                              <label for="name">Name:</label>
+                              <input type="text" id="name" name="name" placeholder="Enter your name" required></input>
+                              <label for="email">Email:</label>
+                              <input type="email" id="email" name="email" placeholder="Enter your email" required></input>
+                              <label for="message">Message:</label>
+                              <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+                          </form>
+                      </div>
+                      <div className="contact-img">
+                          <p>This is for image</p>
+                      </div>
             </div>
         </div>
       </div>
