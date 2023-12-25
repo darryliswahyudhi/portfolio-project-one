@@ -3,8 +3,7 @@
 @tailwind utilities;
 
 .home-page-container {
-  @apply w-full;
-  background: rgb(255, 16, 16);
+  width: 100%;
 }
 
 .home-page-body {
@@ -57,14 +56,13 @@
   max-width: 100vw;
   min-height: 50vh;
   border: 2px solid black;
-  margin: 20px;
   box-sizing: border-box; /* Added box-sizing */
 }
 
 .about-content {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
   border: 2px solid black;
   height: 25%;
   width: 95%;
@@ -72,31 +70,73 @@
   margin: 18px;
 }
 
-.about-top{
+.about-title{
+    font-size: 36px;
+    align-self: center;
+}
+
+.about-top {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-content-p {
+  display: inline-block; /* Added display */
+  margin: 10px;
+  border: 2px solid black;
+  width: 50%;
+  height: 100%;
+}
+
+.about-content-img {
+  display: inline-block; /* Added display */
+  margin: 10px;
+  border: 2px solid black;
+  width: 50%;
+  height: 100%;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  border: 2px solid black;
+  height: 25%;
+  width: 100%;
+  padding: 10px;
+  margin: 18px;
+}
+
+.project-title{
+    font-size: 36px;
+    align-self: center;
+}
+
+.project{
     display: flex;
     flex-direction: row;
+    padding: 10px;
 }
 
-.about-content-p{
-    display: inline-block; /* Added display */
-    margin: 10px;
+.project-image{
     border: 2px solid black;
-    width: 50%;
-    height: 100%;
-}
-
-.about-content-img{
-    display: inline-block; /* Added display */
     margin: 10px;
-    border: 2px solid black;
-    width: 50%;
-    height: 100%;
+    width: 55%;
+    max-height: 350px;
 }
 
-.project-content{
+.project-image-desc{
+    border: 2px solid black;
+    margin: 10px;
+    max-height: 350px;
+    width: 38%;
+}
+
+.project-link{
     display: flex;
-    flex-direction: column;
-    align-self: center;
+  flex-direction: column;
+  align-self: center;
+  text-align: center;
   border: 2px solid black;
   height: 25%;
   width: 95%;
@@ -104,21 +144,35 @@
   margin: 18px;
 }
 
-.resume-content{
-    display: flex;
-    flex-direction: column;
-    align-self: center;
+.resume-content {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
   border: 2px solid black;
   height: 25%;
-  width: 95%;
+  width: 100%;
   padding: 10px;
   margin: 18px;
 }
 
-.contact-content{
-    display: flex;
-    flex-direction: column;
-    align-self: center;
+.resume-desc{
+    border: 2px solid black;
+    margin: 10px;
+    width: 45%;
+    max-height: 350px;
+}
+
+.resume-img{
+    border: 2px solid black;
+    margin: 10px;
+    width: 50%;
+    max-height: 350px;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
   border: 2px solid black;
   height: 25%;
   width: 95%;
@@ -133,5 +187,6 @@
 
   .top-div {
     flex-direction: column; /* Changed flex direction */
+    align-items: center;
   }
 }
