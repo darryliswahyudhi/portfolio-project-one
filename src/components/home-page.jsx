@@ -8,6 +8,9 @@ import "../css/home-page.css";
 function HomePage() {
   return (
     <div className="home-page-container">
+      <div className="home-page-container">
+        <Header />
+      </div>
       <div className="home-page-body">
         <div className="top-div">
           <div className="left-div">
