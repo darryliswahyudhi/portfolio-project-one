@@ -1,11 +1,25 @@
 //Imports from React
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 //Imports from files
 import '../css/header.css';
 
 function Header() {
     const [isOpen, setIsOpen] = useState(false);
+    const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 1024); // add this
+
+    // add this
+    useEffect(() => {
+      const handleResize = () => {
+        setIsLargeScreen(window.innerWidth > 1024);
+      };
+
+      window.addEventListener('resize', handleResize);
+
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }, []);
   
     return (
       <header className="header-container flex justify-between items-center p-5 bg-blue-500">
@@ -20,8 +34,8 @@ function Header() {
             >
               {isOpen ? 'Close' : 'Menu'}
             </button>
-            {isOpen && (
-              <ul className="header-nav lg:flex items-center">
+            {(isOpen || isLargeScreen ) && (
+              <ul className={`header-nav ${isOpen ? 'block' : 'hidden'} lg:flex items-center`}>
                 <li className="header-button mr-12"><a href="#" className="text-white">Home</a></li>
                 <li className="header-button mr-12"><a href="#" className="text-white">About</a></li>
                 <li className="header-button mr-12"><a href="#" className="text-white">Projects</a></li>

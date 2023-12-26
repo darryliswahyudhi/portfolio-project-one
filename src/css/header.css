@@ -3,6 +3,14 @@
   overflow: visible;
 }
 
+.menu-container {
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
 .header-logo{
 
 }
@@ -24,13 +32,6 @@
 
 }
 
-.menu-container {
-  position: absolute;
-  right: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
 
 .header-nav{
   width: auto; /* adjust this value as needed */
