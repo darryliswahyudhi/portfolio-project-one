@@ -1,87 +1,38 @@
-.header-page-body{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-    min-height: 100px;
-    width: 100%;
-}
-
-.header-left{
-    display: flex;
-    flex-direction: column;
-    border: 2px solid black;
-    margin-left: 80px;
+.header-container{
+  height: 100px;
+  overflow: visible;
 }
 
 .header-logo{
-    display: flex;
-    border: 2px solid black;
-    padding: 5px;
-    margin: 20px;
+
 }
 
 .header-right{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 5px;
-    margin-right: 2.5%;
-    border: 2px solid black;
-    width: 65%;
-    flex-wrap: wrap; /* add this */
+  position: relative;
+  width: 50%;
+}
+
+.header-navbar-button{
+
+}
+
+.header-button{
+
+}
+
+.header-mail-button{
+
+}
+
+.menu-container {
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .header-nav{
-    display: flex;
-    padding: 18px;
-    margin: 10px;
-    display: flex;
-    flex-direction: row;
-    border: 2px solid black;
-    height: auto;
-    flex: 1 1 auto; /* change this */
-}
-  
-  .header-nav li {
-    flex: 1;
-  }
-  
-  .header-nav li a {
-    display: block;
-    text-align: center;
-  }
-
-.header-button{
-    padding: 18px;
-    margin: 10px;
-    border: 2px solid black;
-    height: auto;
-    flex: 0 0 auto; /* change this */
-}
-
-/* add this media query for small screens */
-@media (max-width: 600px) {
-  .header-right {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .header-nav {
-    margin: 0;
-    padding: 10px;
-  }
-
-  .header-nav li {
-    margin-right: 20px;
-  }
-
-  .header-button {
-    margin: 10px 0;
-    padding: 10px;
-  }
-
-  .header-left{
-    margin-left: 35px;
-  }
+  width: auto; /* adjust this value as needed */
+  background-color: #3b82f6;
 }
