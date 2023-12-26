@@ -30,7 +30,7 @@ function Header() {
         <div className="header-logo flex-grow">
           <p className="text-white">Logo</p>
         </div>
-        <div className="header-right lg:w-1/2 w-full justify-end flex">
+        <div className="header-right w-full justify-end flex">
           <div className="menu-container">
             <button 
               className="header-navbar-button lg:hidden block" 
