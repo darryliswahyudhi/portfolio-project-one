@@ -8,18 +8,22 @@ function Header() {
     const [isOpen, setIsOpen] = useState(false);
     const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 1024); // add this
 
-    // add this
     useEffect(() => {
-      const handleResize = () => {
-        setIsLargeScreen(window.innerWidth > 1024);
-      };
-
-      window.addEventListener('resize', handleResize);
-
-      return () => {
-        window.removeEventListener('resize', handleResize);
-      };
-    }, []);
+        const handleResize = () => {
+          const largeScreen = window.innerWidth > 1024;
+          setIsLargeScreen(largeScreen);
+  
+          if (largeScreen) {
+            setIsOpen(false);
+          }
+        };
+  
+        window.addEventListener('resize', handleResize);
+  
+        return () => {
+          window.removeEventListener('resize', handleResize);
+        };
+      }, []);
   
     return (
       <header className="header-container flex justify-between items-center p-5 bg-blue-500">
