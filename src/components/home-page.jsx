@@ -92,6 +92,9 @@ function HomePage() {
             </div>
           </div>
           <div className="contact-content">
+            <div className="contact-img">
+              <p>This is for image</p>
+            </div>
             <div className="contact-form">
               <h2>Contact</h2>
               <form>
@@ -119,9 +122,6 @@ function HomePage() {
                   required
                 ></textarea>
               </form>
-            </div>
-            <div className="contact-img">
-              <p>This is for image</p>
             </div>
           </div>
         </div>

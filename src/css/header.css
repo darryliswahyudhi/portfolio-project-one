@@ -1,5 +1,5 @@
 .header-container{
-  height: 150px;
+  height: 110px;
   overflow: visible;
   flex-direction: row;
 }
@@ -21,7 +21,7 @@
 .header-right{
   border: 2px solid red;
   position: relative;
-  height: 30px; /* change to 30 px for minimized responsive */
+  height: 100px; 
 }
 
 .header-navbar-button{
@@ -58,16 +58,26 @@
   align-items: center; /* Add this */
 }
 
+@media (min-width: 1024px){
+  .header-logo{
+    margin-top: 40px;
+  }
+}
 
+@media (max-width: 1024px){
+  .header-right{
+    padding-top: 40px;
+  }
+}
 
 @media (max-width: 768px){
   .menu-container{
-    width: 30%;
+    width: 200px;
   }
 }
 
 @media (max-width: 326px){
   .menu-container{
-    width: 70%;
+    width: 180px;
   }
 }

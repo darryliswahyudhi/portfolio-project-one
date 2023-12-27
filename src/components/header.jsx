@@ -32,10 +32,10 @@ function Header() {
   
     return (
       <header className="header-container flex justify-between items-center p-5 bg-blue-500">
+        <div className="header-right w-full justify-end flex">
         <div className="header-logo flex-grow">
           <p className="text-white">Logo</p>
         </div>
-        <div className="header-right w-full justify-end flex">
           <div className="menu-container">
             <button 
               className="header-navbar-button lg:hidden block" 
