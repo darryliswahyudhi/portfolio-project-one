@@ -6,9 +6,9 @@ import Header from './header';
 
 function AboutPage() {
     return (
-        <div className="home-page-container">
-            <div className="home-page-body">
-                {/* add your body content here */}
+        <div className="about-page-container">
+            <div className="about-page-body">
+                <p>hello</p>
             </div>
         </div>
     );
