@@ -1,18 +1,22 @@
 //Imports from React
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+  import { MailIcon } from '@heroicons/react/solid'; // add this
 
 //Imports from files
 import '../css/header.css';
 
 function Header() {
     const [isOpen, setIsOpen] = useState(false);
-    const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 1024); // add this
+    const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 1024);
+    const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 550); // add this
 
     useEffect(() => {
         const handleResize = () => {
           const largeScreen = window.innerWidth > 1024;
+          const smallScreen = window.innerWidth <= 550;
           setIsLargeScreen(largeScreen);
+          setIsSmallScreen(smallScreen);
   
           if (largeScreen) {
             setIsOpen(false);
@@ -47,7 +51,9 @@ function Header() {
               <li className="header-button mr-12"><Link to="/resume" className="text-white">Resume</Link></li>
                 <li className="header-button mr-12"><Link to="/contact" className="text-white">Contact</Link></li>
                 <li className="header-button mr-12">
-                  <button className="header-mail-button bg-white text-blue-500 px-5 py-2 rounded-full">example@gmail.com</button>
+                  <button className="header-mail-button bg-white text-blue-500 px-5 py-2 rounded-full items-center justify-center">
+                    {isSmallScreen ? <MailIcon className="h-5 w-5" /> : 'example@gmail.com'}
+                  </button>
                 </li>
             </ul>            
             )}
