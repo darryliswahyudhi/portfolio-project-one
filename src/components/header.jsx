@@ -1,7 +1,7 @@
 //Imports from React
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-  import { MailIcon } from '@heroicons/react/solid'; // add this
+import { MailIcon } from '@heroicons/react/solid'; // add this
 
 //Imports from files
 import '../css/header.css';

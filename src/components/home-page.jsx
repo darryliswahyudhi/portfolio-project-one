@@ -3,6 +3,7 @@ import React from "react";
 
 //Imports from files
 import Header from "./header";
+import Footer from './footer';
 import "../css/home-page.css";
 
 function HomePage() {
@@ -125,6 +126,9 @@ function HomePage() {
             </div>
           </div>
         </div>
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );
