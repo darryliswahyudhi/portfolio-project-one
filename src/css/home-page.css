@@ -67,7 +67,7 @@
   width: 95%;
   padding: 10px;
   margin: 18px;
-  margin-top: 85px;
+  margin-top: 38px;
   margin-bottom: 55px;
 }
 
@@ -166,6 +166,10 @@
     margin: 10px;
     width: 45%;
     max-height: 350px;
+}
+
+.resume-desc h3{
+  font-size: 36px;
 }
 
 .resume-img{

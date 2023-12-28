@@ -8,12 +8,12 @@ import '../css/header.css';
 
 function Header() {
     const [isOpen, setIsOpen] = useState(false);
-    const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 1024);
+    const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 1024);
     const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 550); // add this
 
     useEffect(() => {
         const handleResize = () => {
-          const largeScreen = window.innerWidth > 1024;
+          const largeScreen = window.innerWidth >= 1024;
           const smallScreen = window.innerWidth <= 550;
           setIsLargeScreen(largeScreen);
           setIsSmallScreen(smallScreen);
@@ -45,7 +45,7 @@ function Header() {
             </button>
             {(isOpen || isLargeScreen ) && (
             <ul className={`header-nav ${isOpen ? 'block' : 'hidden'} lg:flex items-center`}>
-              <li className="header-button mr-12"><Link to="/home" className="text-white">Home</Link></li>
+              <li className="header-button mr-12"><Link to="/" className="text-white">Home</Link></li>
               <li className="header-button mr-12"><Link to="/about" className="text-white">About</Link></li>
               <li className="header-button mr-12"><Link to="/projects" className="text-white">Projects</Link></li>
               <li className="header-button mr-12"><Link to="/resume" className="text-white">Resume</Link></li>
