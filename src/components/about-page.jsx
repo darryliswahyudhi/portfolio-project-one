@@ -50,7 +50,6 @@ function AboutPage() {
               </div>
             </div>
           </div>
-
           <div className="about-data-engineering">
             <h2>Data Engineering</h2>
             <div className="skill-grid-list">

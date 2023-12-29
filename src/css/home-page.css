@@ -316,7 +316,7 @@ form {
   }
 }
 
-@media (max-width: 326px) {
+@media (max-width: 350px) {
   .home-page-container {
     @apply w-full m-0;
   }
