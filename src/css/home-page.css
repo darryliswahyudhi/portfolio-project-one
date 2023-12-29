@@ -236,7 +236,7 @@ form {
     margin: 18px;
   }
 
-@media (max-width: 768px){
+@media (max-width: 868px){
   .home-page-container {
     @apply w-full m-0;
   }
@@ -316,7 +316,7 @@ form {
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 450px) {
   .home-page-container {
     @apply w-full m-0;
   }

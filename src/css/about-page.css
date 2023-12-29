@@ -82,6 +82,11 @@
   margin-bottom: 50px;
 }
 
+.about-data-science h2, .about-data-engineering h2, .about-cloud-computation h2{
+    text-align: center;
+    font-size: 25px;
+}
+
 .skill-grid-list{
 
 }
@@ -89,18 +94,20 @@
 .skill-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 40px; 
+    grid-gap: 45px; 
     justify-content: center; 
     align-items: center;
-    padding: 30px; 
+    padding: 30px;
+    border: 2px solid palevioletred; 
   }
   
 .skill {
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 2px solid #000000;
     border-radius: 25px;
     text-align: center;
     font-weight: bold;
+    margin-left: 15px;
 }
 
 .contact-content {
@@ -177,6 +184,7 @@ textarea {
 .about-skills-hook span{
     border: 2px solid black;
     font-size: 36px;
+    text-align: center;
 }
 
 .about-projects-hook{
@@ -194,15 +202,25 @@ textarea {
 .about-projects-hook span{
     border: 2px solid black;
     font-size: 36px;
+    text-align: center;
 }
 
-@media (max-width: 768px){
+@media (max-width: 868px){
     .about-me, .about-story{
         display: flex;
         flex-direction: column;
+        margin-top: 20px;
+        margin-bottom: 15;
+    }
+
+    .about-skills-hook, .about-projects-hook{
+        width: 95%;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     .about-skills-hook span, .about-projects-hook span{
+        width: 100%;
         font-size: 25px;
     }
 
@@ -226,14 +244,19 @@ textarea {
       }
 }
 
-@media (max-width: 350px){
-
+@media (max-width: 450px){
     .about-me-img, .about-me-desc, .about-story-desc, .about-story-img{
         display: flex;
         flex-direction: column;
         width: 90%;
         height: auto;
         min-height: 200px;
+    }
+
+    .about-skills-hook, .about-projects-hook{
+        width: 95%;
+        margin-top: 10px;
+        margin-bottom: 40px;
     }
 
     .about-skills-hook span, .about-projects-hook span{
@@ -246,8 +269,18 @@ textarea {
         align-items: center;
       }
     
-      .contact-form, .contact-img{
-        width: 95%;
+    .contact-form, .contact-img{
+        width: 100%;
         max-height: 400px;
       }
+
+    .skill-grid {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .skill{
+        width: 100%;
+    }
 }

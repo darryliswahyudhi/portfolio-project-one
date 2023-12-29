@@ -79,7 +79,7 @@
     list-style-type: none;
 }
 
-@media (max-width: 768px){
+@media (max-width: 868px){
 
     .footer-body{
         align-items: center;
@@ -108,7 +108,7 @@
     }
 }
 
-@media (max-width: 335px) {
+@media (max-width: 450px) {
     .footer-right ul{
         align-items: center;
         flex-direction: column;

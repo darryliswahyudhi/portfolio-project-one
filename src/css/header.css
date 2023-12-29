@@ -75,7 +75,7 @@
   }
 }
 
-@media (max-width: 768px){
+@media (max-width: 868px){
   .menu-container{
     width: 67.5%;
   }
@@ -85,7 +85,7 @@
   }
 }
 
-@media (max-width: 335px){
+@media (max-width: 450px){
   .menu-container{
     width: 67.5%;
   }
