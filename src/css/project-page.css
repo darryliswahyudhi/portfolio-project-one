@@ -1,0 +1,11 @@
+.project-page-container{
+    height: 100%;
+    width: 100%;
+}
+
+.project-page-body{
+    display: flex; 
+    flex-direction: column; 
+    background: blue;
+    min-height: 100vh;
+}
