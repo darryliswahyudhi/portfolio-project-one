@@ -52,11 +52,11 @@
 
 .header-mail-button{
   margin-bottom: auto;
-  width: 100%; /* Keep this */
-  max-width: 300px;
-  display: flex; /* Add this */
-  justify-content: center; /* Add this */
-  align-items: center; /* Add this */
+  width: 100%; 
+  max-width: 1000px;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
 }
 
 @media (min-width: 1024px){
