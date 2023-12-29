@@ -1,0 +1,149 @@
+.about-page-container{
+    width: 100%;
+    height: 100%;
+}
+
+.about-page-body{
+    display: flex; 
+    flex-direction: column; 
+    background: blue;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.about-me{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    height: auto;
+    border: 2px solid black;
+    min-height: 400px;
+    margin-top: 75px;
+    margin-bottom: 40px;
+}
+
+.about-me-img{
+    border: 2px solid black;
+    margin: 20px;
+    width: 50%;
+
+}
+
+.about-me-desc{
+    border: 2px solid black;
+    margin: 20px;
+    width: 50%;
+}
+
+.about-story{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    height: auto;
+    border: 2px solid black;
+    min-height: 400px;
+    margin-top: 75px;
+    margin-bottom: 40px;
+}
+
+.about-story-img{
+    border: 2px solid black;
+    margin: 20px;
+    width: 50%;
+}
+
+.about-story-desc{
+    border: 2px solid black;
+    margin: 20px;
+    width: 50%;
+}
+
+.about-skills div {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .skill-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px; 
+  }
+  
+  .skill {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  
+  .about-data-science {
+    background-color: #f5f5f5;
+  }
+  
+  .about-data-engineering {
+    background-color: #eee;
+  }
+  
+  .about-cloud-computation {
+    background-color: #f8f8f8;
+  }
+
+  .contact-content {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    flex-direction: row;
+    border: 2px solid black;
+    height: 25%;
+    width: 95%;
+    padding: 10px;
+    margin: 18px;
+    margin-bottom: 110px;
+  }
+  
+  .contact-form{
+      display: flex;
+      flex-direction: column;
+      border: 2px solid black;
+      width: 48%;
+      height: 100%;
+      padding: 10px;
+      margin: 18px;
+  }
+  
+  form {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    label {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    
+    input, textarea {
+      border: 2px solid black;
+      padding: 5px;
+      width: 100%;
+    }
+    
+    input[type="text"], input[type="email"], input[type="message"] {
+      width: auto;
+      padding: 5px;
+    }
+    
+    textarea {
+      width: 100%;
+    }
+    
+    .contact-img {
+      display: flex;
+      border: 2px solid black;
+      max-height: 350px;
+      width: 50%;
+      padding: 10px;
+      margin: 18px;
+    }
+  

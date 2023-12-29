@@ -4,8 +4,8 @@
 }
 
 .home-page-body {
-  display: flex; /* Added flex display */
-  flex-direction: column; /* Added flex direction */
+  display: flex; 
+  flex-direction: column; 
   background: blue;
   min-height: 100vh;
 }
