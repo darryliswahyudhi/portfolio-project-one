@@ -69,6 +69,10 @@
   .header-right{
     padding-top: 40px;
   }
+
+  .menu-container{
+    width: 67%;
+  }
 }
 
 @media (max-width: 768px){
@@ -81,7 +85,7 @@
   }
 }
 
-@media (max-width: 326px){
+@media (max-width: 335px){
   .menu-container{
     width: 67.5%;
   }
