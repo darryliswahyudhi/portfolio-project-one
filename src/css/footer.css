@@ -84,3 +84,26 @@
 .footer-right ul{
     list-style-type: none;
 }
+
+@media (max-width: 450px){
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-right{
+        display: flex;
+        width: 100%;
+    }
+
+    .footer-right h3{
+        align-self: center;
+        padding: 10px;
+    }
+
+    .footer-right ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
