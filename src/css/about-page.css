@@ -102,13 +102,25 @@
   }
   
 .skill {
+    display: flex;
+    align-items: center;
     padding: 10px;
     border: 2px solid #000000;
-    border-radius: 25px;
+    border-radius: 45px;
     text-align: center;
     font-weight: bold;
     margin-left: 15px;
+    width: 250px;
 }
+
+.skill-image {
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    border-radius: 50%; /* This makes the image circular */
+    object-fit: cover; /* This ensures the image covers the entire area */
+    margin-right: 10px; /* This adds some space between the image and the text */
+}
+
 
 .contact-content {
   display: flex;
@@ -205,12 +217,23 @@ textarea {
     text-align: center;
 }
 
+@media (max-width: 1200px){
+    .skill{
+        width: 150px;
+    }
+}
+
 @media (max-width: 868px){
     .about-me, .about-story{
         display: flex;
         flex-direction: column;
         margin-top: 20px;
         margin-bottom: 15;
+    }
+
+    .about-data-engineering, .about-data-science, .about-cloud-computation{
+        margin-top: 10px;
+        margin-bottom: 50px;
     }
 
     .about-skills-hook, .about-projects-hook{
@@ -232,6 +255,16 @@ textarea {
         min-height: 200px;
     }
 
+    .skill-grid{
+        width: 100%;
+        display: grid;
+        grid-gap: 10px;
+    }
+
+    .skill{
+        width: 100%;
+    }
+
     .contact-content{
         display: flex;
         flex-direction: column;
@@ -251,6 +284,11 @@ textarea {
         width: 90%;
         height: auto;
         min-height: 200px;
+    }
+
+    .about-data-engineering, .about-data-science, .about-cloud-computation{
+        margin-top: 10px;
+        margin-bottom: 50px;
     }
 
     .about-skills-hook, .about-projects-hook{

@@ -79,6 +79,10 @@
     list-style-type: none;
 }
 
+.footer-right li{
+    padding: 10px;
+}
+
 @media (max-width: 868px){
 
     .footer-body{
