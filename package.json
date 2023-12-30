@@ -3,6 +3,7 @@
     "@heroicons/react": "^1.0.6",
     "barba.js": "^1.0.0",
     "create-react-app": "^5.0.1",
+    "framer-motion": "^10.16.16",
     "react": "^18.2.0",
     "react-router-dom": "^6.21.1",
     "react-scripts": "^5.0.1",
