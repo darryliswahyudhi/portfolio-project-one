@@ -9,3 +9,40 @@
     background: blue;
     min-height: 100vh;
 }
+
+.project-container{
+    overflow: hidden;
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    border: 2px solid black;
+    height: 25%;
+    width: 100%;
+    padding: 10px;
+    margin: 18px;
+    margin-top: 85px;
+    margin-bottom: 40px;
+  }
+  
+  .project{
+      display: flex;
+      flex-direction: row;
+      padding: 10px;
+  }
+  
+  .project-image{
+      border: 2px solid black;
+      margin: 10px;
+      width: 55%;
+      max-height: 350px;
+  }
+  
+  .project-image-desc{
+      border: 2px solid black;
+      margin: 10px;
+      max-height: 350px;
+      width: 38%;
+  }
