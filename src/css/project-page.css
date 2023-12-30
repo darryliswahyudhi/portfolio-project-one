@@ -7,23 +7,20 @@
   display: flex;
   flex-direction: column;
   background: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 27, 206);
   min-height: 100vh;
 }
 
-.data-barba-container{
-    height: auto;
-    width: auto;
-    border: 2px solid yellow;
-}
-
 .project-container {
+  display: flex;
+  flex-direction: row;
   overflow: hidden;
 }
 
 .project-section {
-  transition: transform 1s ease-in-out;
-  width: 100%;
   border: 2px solid green;
+  min-width: 100vw;
+  height: auto;
 }
 
 .project-content {
@@ -32,7 +29,7 @@
   align-self: center;
   justify-content: center;
   border: 2px solid rgb(245, 0, 0);
-  width: 93%;
+  width: 95%;
   margin-top: 85px;
   margin-bottom: 40px;
 }
@@ -41,6 +38,7 @@
   display: flex;
   flex-direction: row;
   padding: 10px;
+  border: 2px solid blue;
 }
 
 .project-image {

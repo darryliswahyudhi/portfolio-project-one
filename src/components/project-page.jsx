@@ -1,37 +1,13 @@
 //Imports from React
 import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, easeInOut } from "framer-motion";
 
 //Imports from files
 import "../css/project-page.css";
 import Header from "./header";
 import Footer from "./footer";
 
-const variants = {
-  enter: (direction) => {
-    return {
-      x: direction > 0 ? 1000 : -1000,
-      opacity: 0,
-    };
-  },
-  center: {
-    zIndex: 1,
-    x: 0,
-    opacity: 1,
-  },
-  exit: (direction) => {
-    return {
-      zIndex: 0,
-      x: direction < 0 ? 1000 : -1000,
-      opacity: 0,
-    };
-  },
-};
-
 function ProjectPage() {
-  const [direction, setDirection] = useState(0);
-  const [index, setIndex] = useState(0);
-
   const projectSections = [
     <div className="project-section">
       <span>Data Science</span>
@@ -137,7 +113,30 @@ function ProjectPage() {
     </div>,
   ];
 
+  const [direction, setDirection] = useState(0);
+  const [index, setIndex] = useState(0);
   const numSections = projectSections.length;
+
+  const variants = {
+    enter: (direction) => {
+      return {
+        x: direction > 0 ? 1000 : -1000,
+        opacity: 0,
+      };
+    },
+    center: {
+      zIndex: 1,
+      x: 0,
+      opacity: 1,
+    },
+    exit: (direction) => {
+      return {
+        zIndex: 0,
+        x: direction > 0 ? 1000 : -1000,
+        opacity: 0,
+      };
+    },
+  };
 
   return (
     <div className="project-page-container">
@@ -148,25 +147,31 @@ function ProjectPage() {
         <div className="project-body-title">
           <span>Projects</span>
         </div>
+        <div className="button-container">
+          <div className="button-container-prev">
+            <button onClick={() => {setIndex((numSections + index - 1) % numSections); setDirection(-1);}}>Prev</button>
+          </div>
+          <div className="button-container-next">
+            <button onClick={() => {setIndex((index + 1) % numSections); setDirection(1);}}>Next</button>
+          </div>
+        </div>
         <div className="project-container">
-        <button onClick={() => {setIndex((numSections + index - 1) % numSections); setDirection(-1);}}>Prev</button>
-        <button onClick={() => {setIndex((index + 1) % numSections); setDirection(1);}}>Next</button>
           <AnimatePresence initial={false} custom={direction}>
-            <motion.div
-              key={index}
-              custom={direction}
-              variants={variants}
-              initial="enter"
-              animate="center"
-              exit="exit"
-              transition={{
-                x: { type: "spring", stiffness: 300, damping: 30 },
-                opacity: { duration: 1 },
-              }}
-            >
-              {projectSections[index]}
-            </motion.div>
-          </AnimatePresence>
+          <motion.div
+            key={index}
+            custom={direction}
+            variants={variants}
+            initial="enter"
+            animate="center"
+            exit="exit"
+            transition={{
+              x: { type: "spring", stiffness: 300, damping: 30 },
+              opacity: { duration: 1.5 }, // Apply easeInOut easing
+            }}
+          >
+            {projectSections[index]}
+          </motion.div>
+        </AnimatePresence>
         </div>
       </div>
       <div>
